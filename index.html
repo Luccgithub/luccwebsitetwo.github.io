@@ -3,182 +3,162 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>YouTube Layout Recreation</title>
+   <title>Amazon Layout Recreation</title>
 
    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-   <header class="top-bar">
-      <div class="left-top">
-         <span class="hamburger">☰</span>
-         <a class="youtube-logo" href="#home">
-            <span class="play-box">▶</span>
-            <span>YouTube</span>
-         </a>
+   <header class="top-header">
+      <div class="logo">amazon<span>.com</span></div>
+
+      <div class="location">
+         <small>Deliver to</small>
+         <strong>Houston</strong>
       </div>
 
-      <form class="search-box">
-         <input type="text" value="national treasure drake" aria-label="Search">
+      <form class="search-bar">
+         <select>
+            <option>All</option>
+            <option>Electronics</option>
+            <option>Gaming</option>
+            <option>Books</option>
+         </select>
+         <input type="text" placeholder="Search Amazon">
          <button type="submit">🔍</button>
-         <span class="mic">🎙</span>
       </form>
 
-      <div class="right-top">
-         <a class="create-btn" href="#">＋ Create</a>
-         <a class="icon-btn" href="#">🔔</a>
-         <a class="profile" href="#">L</a>
+      <div class="header-link">
+         <small>Hello, sign in</small>
+         <strong>Account & Lists</strong>
       </div>
+
+      <div class="header-link">
+         <small>Returns</small>
+         <strong>& Orders</strong>
+      </div>
+
+      <div class="cart">🛒 Cart</div>
    </header>
 
-   <div class="layout">
-      <aside class="sidebar">
-         <a class="active" href="#home">🏠 Home</a>
-         <a href="#shorts">▶ Shorts</a>
+   <nav class="sub-nav">
+      <a href="#">☰ All</a>
+      <a href="#">Today's Deals</a>
+      <a href="#">Customer Service</a>
+      <a href="#">Registry</a>
+      <a href="#">Gift Cards</a>
+      <a href="#">Sell</a>
+   </nav>
 
-         <hr>
+   <main>
+      <section class="hero">
+         <div class="hero-text">
+            <h1>Shop deals for your everyday needs</h1>
+            <p>Find tech, games, clothes, home items, and more in one place.</p>
+            <a class="btn btn-warning" href="#products">Start Shopping</a>
+         </div>
+      </section>
 
-         <h3>Subscriptions</h3>
-         <a href="#">🔵 4badimh01</a>
-         <a href="#">🟢 4rif</a>
-         <a href="#">🟣 5dJay</a>
-         <a href="#">🟡 8-BitRyan</a>
-         <a href="#">⚫ 3900 Productions</a>
-         <a href="#">🔴 A Random YouTuber</a>
-         <a href="#">⌄ Show more</a>
-
-         <hr>
-
-         <h3>You</h3>
-         <a href="#">▣ Your channel</a>
-         <a href="#">↺ History</a>
-         <a href="#">☰ Playlists</a>
-         <a href="#">◴ Watch later</a>
-         <a href="#">👍 Liked videos</a>
-         <a href="#">⬇ Downloads</a>
-      </aside>
-
-      <main class="content">
-         <section class="chips">
-            <a class="selected" href="#">All</a>
-            <a href="#">Music</a>
-            <a href="#">Gaming</a>
-            <a href="#">Drake</a>
-            <a href="#">Mixes</a>
-            <a href="#">Video game development</a>
-            <a href="#">Live</a>
-            <a href="#">Podcasts</a>
-            <a href="#">Reaction videos</a>
-            <a href="#">Freestyle Rap</a>
-            <a href="#">Comedy</a>
-         </section>
-
-         <section id="home" class="video-grid">
-            <a href="#" class="video-link">
-               <article class="video-card">
-                  <div class="thumb reaction">“THIS IS EVIL” <span>19:05</span></div>
-                  <div class="video-details">
-                     <div class="avatar">J</div>
-                     <div>
-                        <h2>Moist Critical Reacted To My Pred Catch...</h2>
-                        <p>JIDionPremium ✓</p>
-                        <p>67K views • 2 hours ago</p>
-                     </div>
-                     <div class="dots">⋮</div>
+      <section class="container-fluid product-sections" id="products">
+         <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+               <div class="shop-card">
+                  <h2>Gaming gear</h2>
+                  <div class="mini-grid">
+                     <img src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?auto=format&fit=crop&w=500&q=80" alt="Gaming controller">
+                     <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=500&q=80" alt="Gaming setup">
+                     <img src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=500&q=80" alt="Keyboard">
+                     <img src="https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?auto=format&fit=crop&w=500&q=80" alt="Mouse">
                   </div>
-               </article>
-            </a>
+                  <a href="#">Shop gaming</a>
+               </div>
+            </div>
 
-            <a href="#" class="video-link">
-               <article class="video-card">
-                  <div class="thumb ice">ICEMAN <span>2:08</span></div>
-                  <div class="video-details">
-                     <div class="avatar">I</div>
-                     <div>
-                        <h2>Drake - One For Me Unreleased ICEMAN Song Leaked</h2>
-                        <p>Icosoo</p>
-                        <p>47K views • 4 days ago</p>
-                     </div>
-                     <div class="dots">⋮</div>
+            <div class="col-lg-3 col-md-6">
+               <div class="shop-card">
+                  <h2>Refresh your space</h2>
+                  <div class="mini-grid">
+                     <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=500&q=80" alt="Chair">
+                     <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=500&q=80" alt="Living room">
+                     <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=500&q=80" alt="Bedroom">
+                     <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?auto=format&fit=crop&w=500&q=80" alt="Home decor">
                   </div>
-               </article>
-            </a>
+                  <a href="#">Shop home</a>
+               </div>
+            </div>
 
-            <a href="#" class="video-link">
-               <article class="video-card">
-                  <div class="thumb dev">UE5 INVENTORY FIX <span>8:42</span></div>
-                  <div class="video-details">
-                     <div class="avatar">D</div>
-                     <div>
-                        <h2>Fixing My Inventory System Before It Breaks Again</h2>
-                        <p>Dev Notes</p>
-                        <p>12K views • 6 days ago</p>
-                     </div>
-                     <div class="dots">⋮</div>
+            <div class="col-lg-3 col-md-6">
+               <div class="shop-card">
+                  <h2>Electronics</h2>
+                  <div class="mini-grid">
+                     <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=500&q=80" alt="Laptop">
+                     <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=500&q=80" alt="Phone">
+                     <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=80" alt="Headphones">
+                     <img src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=500&q=80" alt="Monitor">
                   </div>
-               </article>
-            </a>
+                  <a href="#">Shop electronics</a>
+               </div>
+            </div>
 
-            <a href="#" class="video-link">
-               <article class="video-card">
-                  <div class="thumb music">NIGHT DRIVE MIX <span>32:10</span></div>
-                  <div class="video-details">
-                     <div class="avatar">M</div>
-                     <div>
-                        <h2>Late Night Music For Working On Projects</h2>
-                        <p>Loop Station</p>
-                        <p>214K views • 3 weeks ago</p>
-                     </div>
-                     <div class="dots">⋮</div>
+            <div class="col-lg-3 col-md-6">
+               <div class="shop-card">
+                  <h2>Back to school</h2>
+                  <div class="mini-grid">
+                     <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=500&q=80" alt="School desk">
+                     <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=500&q=80" alt="Books">
+                     <img src="https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?auto=format&fit=crop&w=500&q=80" alt="Backpack">
+                     <img src="https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?auto=format&fit=crop&w=500&q=80" alt="Notebook">
                   </div>
-               </article>
-            </a>
-         </section>
+                  <a href="#">Shop school items</a>
+               </div>
+            </div>
+         </div>
+      </section>
 
-         <section class="shorts-title">
-            <h2 id="shorts">Shorts</h2>
-            <span>⋮</span>
-         </section>
+      <section class="container-fluid mt-4">
+         <div class="wide-card">
+            <h2>Popular products</h2>
 
-         <section class="shorts-grid">
-            <a href="#" class="short-link">
-               <article class="short-card">
-                  <div class="short-img s1">bro forgot the plan</div>
-                  <h3>He really thought that would work 😂</h3>
-               </article>
-            </a>
+            <div class="product-row">
+               <div class="product">
+                  <div class="product-img">🎧</div>
+                  <h3>Wireless Headphones</h3>
+                  <p>$39.99</p>
+               </div>
 
-            <a href="#" class="short-link">
-               <article class="short-card">
-                  <div class="short-img s2">CAN<br>WE<br>STOP</div>
-                  <h3>Every gaming argument online</h3>
-               </article>
-            </a>
+               <div class="product">
+                  <div class="product-img">⌨️</div>
+                  <h3>RGB Keyboard</h3>
+                  <p>$49.99</p>
+               </div>
 
-            <a href="#" class="short-link">
-               <article class="short-card">
-                  <div class="short-img s3">this clip still makes no sense</div>
-                  <h3>Old clips are always funnier</h3>
-               </article>
-            </a>
+               <div class="product">
+                  <div class="product-img">🎮</div>
+                  <h3>Game Controller</h3>
+                  <p>$59.99</p>
+               </div>
 
-            <a href="#" class="short-link">
-               <article class="short-card">
-                  <div class="short-img s4">me after saying one more game</div>
-                  <h3>One more game turned into three hours</h3>
-               </article>
-            </a>
+               <div class="product">
+                  <div class="product-img">💻</div>
+                  <h3>Laptop Stand</h3>
+                  <p>$24.99</p>
+               </div>
 
-            <a href="#" class="short-link">
-               <article class="short-card">
-                  <div class="short-img s5">C-1</div>
-                  <h3>Animated movie design breakdown</h3>
-               </article>
-            </a>
-         </section>
-      </main>
-   </div>
+               <div class="product">
+                  <div class="product-img">🖱️</div>
+                  <h3>Gaming Mouse</h3>
+                  <p>$29.99</p>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+
+   <footer>
+      <a href="#">Back to top</a>
+      <p>Amazon-inspired layout recreation made with HTML, CSS, and Bootstrap.</p>
+   </footer>
 
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
