@@ -2,6 +2,10 @@
    box-sizing: border-box;
 }
 
+html {
+   scroll-behavior: smooth;
+}
+
 body {
    margin: 0;
    background-color: #0f0f0f;
@@ -38,6 +42,8 @@ body {
    gap: 6px;
    font-size: 22px;
    font-weight: bold;
+   color: white;
+   text-decoration: none;
 }
 
 .play-box {
@@ -94,6 +100,13 @@ body {
    padding: 8px 14px;
    border-radius: 20px;
    font-weight: bold;
+   text-decoration: none;
+}
+
+.icon-btn {
+   color: white;
+   text-decoration: none;
+   font-size: 20px;
 }
 
 .profile {
@@ -106,6 +119,7 @@ body {
    align-items: center;
    justify-content: center;
    font-weight: bold;
+   text-decoration: none;
 }
 
 .layout {
@@ -158,9 +172,13 @@ body {
    overflow-x: auto;
    margin-bottom: 24px;
    padding-bottom: 6px;
+   position: sticky;
+   top: 56px;
+   background-color: #0f0f0f;
+   z-index: 900;
 }
 
-.chips button {
+.chips a {
    border: none;
    background-color: #272727;
    color: white;
@@ -168,6 +186,7 @@ body {
    border-radius: 8px;
    font-weight: bold;
    white-space: nowrap;
+   text-decoration: none;
 }
 
 .chips .selected {
@@ -180,6 +199,12 @@ body {
    grid-template-columns: repeat(2, 1fr);
    gap: 20px;
    margin-bottom: 30px;
+}
+
+.video-link,
+.short-link {
+   color: inherit;
+   text-decoration: none;
 }
 
 .thumb {
@@ -215,6 +240,14 @@ body {
    background: linear-gradient(135deg, #7be7e4, #6fd1d6);
    color: #2f61d5;
    letter-spacing: 4px;
+}
+
+.dev {
+   background: linear-gradient(135deg, #1b4332, #40916c);
+}
+
+.music {
+   background: linear-gradient(135deg, #3a0ca3, #f72585);
 }
 
 .video-details {
@@ -315,6 +348,39 @@ body {
    background: linear-gradient(180deg, #f8f0d8, #1a1a1a);
 }
 
+.info-box {
+   margin-top: 40px;
+   background-color: #181818;
+   padding: 20px;
+   border-radius: 12px;
+   border: 1px solid #303030;
+}
+
+.video-card,
+.short-card,
+.chips a,
+.sidebar a,
+.create-btn,
+.icon-btn,
+.profile,
+.youtube-logo,
+.search-box button {
+   transition: 0.2s;
+}
+
+.video-card:hover,
+.short-card:hover,
+.chips a:hover,
+.create-btn:hover,
+.icon-btn:hover,
+.profile:hover,
+.youtube-logo:hover,
+.search-box button:hover {
+   transform: translateY(-4px);
+   cursor: pointer;
+   filter: brightness(1.15);
+}
+
 @media (max-width: 900px) {
    .sidebar {
       display: none;
@@ -352,6 +418,10 @@ body {
 
    .content {
       padding: 12px;
+   }
+
+   .chips {
+      top: 104px;
    }
 
    .thumb {
